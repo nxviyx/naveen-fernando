@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Fullscreen Layout with Page Transitions</title>
+		<meta name="description" content="Fullscreen Layout with Page Transitions" />
+		<meta name="keywords" content="fullscreen layout, boxes, responsive, page transitions, css transitions, jquery, portfolio, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/youtube.css" />
+		<link rel="stylesheet" type="text/css" href="css/venbox.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/components.css" />
+		<link rel="stylesheet" type="text/css" href="css/about-me.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/blog.css" />
+		<link rel="stylesheet" type="text/css" href="css/medium.css">
+
+		<link rel="stylesheet" href="css/jquery.animatedheadline.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+		<script src="js/html-embed.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<!-- CSS only -->
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+		<!-- JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+	<body>
+		<div class="block">	
+			<div class="main-picture men"></div>
+		
+			<div id="bl-main" class="bl-main">
+				<section>
+					<div class="bl-box">
+						<section class="animate-rotate-3">
+							<h1 class="ah-headline">
+								<span class="welcome">Hi There ! I'm</span>
+								<div class="my-name">Naveen <br> Fernando</div>
+                                    <span dty class="ah-words-wrapper">
+										<b class="is-visible">web designer</b>
+										<b>developer</b>
+										<b>blogger</b>
+									</span>
+							</h1>
+						</section>
+					</div>
+					<div class="bl-content">
+						
+						<!-- ABOUT ME CONTENT START -->
+
+						<div class="container" style="text-align: center;">
+							<div class="page-title">
+								<span class="word-1">About</span>
+								<span class="word-2">me</span>
+							</div>
+						</div><br><br>
+
+						<div class="row">
+							<div class="info-title">PERSONAL INFOS</div><br>
+							<div class="col-md-12 col-lg-6">
+								<div class="row">
+									<div class="col-md-6 col-6">
+										<ul style="list-style: none;">
+											<li>
+												<span class="info-label">First Name </span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">Naveen</span>
+											</li>
+											<li>
+												<span class="info-label">Last Name :</span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">Fernando</span>
+											</li>
+											<li>
+												<span class="info-label">Age : </span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">24 Years</span>
+											</li>
+											<li>
+												<span class="info-label">Nationality :</span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">Sri Lankan</span>
+											</li>
+											<li>
+												<span class="info-label">Freelance :</span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">Available</span>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6 col-6">
+										<ul style="list-style: none;">
+											<li>
+												<span class="info-label">Address : </span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">Colombo</span>
+											</li>
+											<li>
+												<span class="info-label">Phone :</span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">+94770745266</span>
+											</li>
+											<li>
+												<span class="info-label">Email :</span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">malinda0610@gmail.com</span>
+											</li>
+											<li>
+												<span class="info-label">Skype :</span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">naveen_fdo</span>
+											</li>
+											<li>
+												<span class="info-label">Langages :</span>
+												<span class="info-value d d-sm-inline-block d-lg-block d-xl-inline-block">English, Sinhala</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- <div class="">
+									<a style="background-color: #ffb400;" class="btn btn-primary" href="files/Naveen Fernando_CV.pdf" download>
+										Download CV</a>
+								</div> -->
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<div class="row">
+									<div class="col-md-6 col-6">
+										<div class="item-box">
+											<div class="item-label">2</div><br>
+											<div class="item-value">YEAR OF EXPERIENCE</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-6">
+										<div class="item-box">
+											<div class="item-label">10</div><br>
+											<div class="item-value">COMPLETED PROJECTS</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-6">
+										<div class="item-box">
+											<div class="item-label">90K</div><br>
+											<div class="item-value">LINES OF CODE SNIPPETS</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-6">
+										<div class="item-box">
+											<div class="item-label">5</div><br>
+											<div class="item-value">AWARD'S WINNINGS</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Education -->
+
+						<div class="info-title">EDUCATION</div><br>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="exp-box">
+									<ul>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fas fa-graduation-cap  exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2017 - 2021</div>
+											<span class="exp-title">BACHELOR DEGREE</span>
+											<span class="exp-place">IIT</span>
+											<div class="exp-desc">
+												<b>Informatics Institute of Technology</b><br>
+												(Affiliated with University of Westminster)<br>
+												<b>(BEng) Honours in Software Engineering</b>
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fas fa-graduation-cap  exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2003 - 2017</div>
+											<span class="exp-title">G.C.E (Advanced Level)</span>
+											<span class="exp-place">2017</span>
+											<div class="exp-desc">
+												Nalanda College Colombo-10<br>
+												<b>Passed with three Good passes in Physical Science Stream.</b>
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fas fa-graduation-cap  exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2003 - 2017</div>
+											<span class="exp-title">G.C.E. (Ordinary Level) –</span>
+											<span class="exp-place">2013</span>
+											<div class="exp-desc">
+												Nalanda College Colombo-10<br>
+												<b>Passed with eight distinction passes and one very good pass</b>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="exp-box">
+									<ul>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fas fa-graduation-cap exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2017 - 2018</div>
+											<span class="exp-title">Android Development Course</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												<b>Completed the Android Application development Course.</b><br>
+												MBrain Technologies (Pvt) Ltd Sri Lanka
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fas fa-graduation-cap exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2016 - 2018</div>
+											<span class="exp-title">PHP & Java Programming Course</span>
+											<!-- <span class="exp-place"></span> -->
+											<div class="exp-desc">
+												<b>Completed the PHP & Java Training Program.</b><br>
+												Industrial Master (Pvt) Ltd Sri Lanka
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fas fa-graduation-cap exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2014 - 2016</div>
+											<span class="exp-title">General English Course</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												<b>Completed the English language course up to upper intermediate three (UI3).</b><br>
+												British Council Sri Lanka
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Experience -->
+
+						<div class="info-title">EXPERIENCE</div><br>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="exp-box">
+									<ul>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fa fa-briefcase exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2019 - 2020</div>
+											<span class="exp-title">FULL STACK DEVELOPER</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												ShipXpress (Pvt) Ltd Sri-Lanka. <br>
+												<b>
+													TRAX project – Railroad shipping details management system.
+												   SmartGWT | Struts2 | Hibernate | SpringBoot | MySQL
+												</b>
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fa fa-briefcase exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2019 - 2020</div>
+											<span class="exp-title">FULL STACK DEVELOPER</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												ShipXpress (Pvt) Ltd Sri-Lanka. <br>
+												<b>
+													TRAX Automation – Support application for TRAX application.
+													ReactJS| Express | NodeJs | SpringBoot | MySQL
+												</b>
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fa fa-briefcase exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2019 - 2020</div>
+											<span class="exp-title">BACKEND DEVELOPER</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												ShipXpress (Pvt) Ltd Sri-Lanka. <br>
+												<b>
+													Trip Engine – Application to scrape US railroad web sites.
+													Puppeteer | Express | NodeJs | MySQL
+												</b>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="exp-box">
+									<ul>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fa fa-briefcase exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2018 Jun</div>
+											<span class="exp-title">FULL STACK DEVELOPER</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												<b>
+													<p></p>
+													Food recipes based on online restaurant reviews.<br>
+													Python | Flask | JavaScript | Ionic | MySQL
+											</b>
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fa fa-briefcase exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2019 Oct</div>
+											<span class="exp-title">FULL STACK DEVELOPER</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												<b>
+													<p></p>
+													Library Management system.<br>
+													Play Framework | Angular | Angular Material | OOP
+												</b>
+											</div>
+										</li>
+										<li class="exp-list-item">
+											<div class="exp-icon-holder">
+												<i class="fa fa-briefcase exp-icon" aria-hidden="true"></i>
+											</div>
+											<div class="exp-year">2017 Jun</div>
+											<span class="exp-title">FRONTEND DEVELOPER</span>
+											<!-- <span class="exp-place">ENVATO</span> -->
+											<div class="exp-desc">
+												<p></p>
+												Website for Sri Lankan Tourism Industry<br>
+												<b>
+													HTML | CSS | JavaScript | JQuery
+												</b>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- ABOUT ME CONTENT END -->
+						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<div class="title">
+							<span class="title_1">MY</span>
+							<span class="title_2">PROJECTS</span>
+						</div>
+					</div>
+					<div class="bl-content">
+
+						<div class="container" style="text-align: center;">
+							<div class="page-title">
+								<span class="word-1">MY</span>
+								<span class="word-2">PROJECTS</span>
+							</div>
+						</div><br><br>
+
+						<ul class="project-items" id="bl-work-items">
+							<li data-panel="panel-1">
+								<a href="#">
+									<figure>
+										<img src="projects/Tourism-In-Sri-Lanka-cover.png">
+									</figure>
+
+									<div class="blog-title">
+										WebSite for Tourism In Sri Lanka
+									</div>
+								</a>
+								<div class="tags">
+									<span class="tag">HTML</span>
+									<span class="tag">CSS</span>
+									<span class="tag">JavaScript</span>
+									<span class="tag">JQuery</span>
+								</div>
+								
+							</li>
+							<li data-panel="panel-2">
+								<a href="#">
+									<figure>
+										<img src="projects/codeigniter-pizzanow-cover.png">
+									</figure>
+									<div class="blog-title">
+										PizzaNow Online Ecommerce App
+									</div>
+								</a>
+								<div class="tags">
+									<span class="tag">Codeiniter</span>
+									<span class="tag">PHP</span>
+									<span class="tag">HTML</span>
+									<span class="tag">CSS</span>
+								</div>
+							</li>
+							<li data-panel="panel-3">
+								<a href="#">
+									<figure>
+										<img src="projects/hypertrophy-cover.png">
+									</figure>
+									<div class="blog-title">
+										Cardiac Hypertrophy Diagnosis
+									</div>
+								</a>
+								<div class="tags">
+									<span class="tag">Angular</span>
+									<span class="tag">Flask</span>
+									<span class="tag">Python</span>
+									<span class="tag">TypeScript</span>
+								</div>
+							</li>
+							<li data-panel="panel-4">
+								<a href="#">
+									<figure>
+										<img src="projects/reciepe-app-cover.png">
+									</figure>
+									<div class="blog-title">
+										Reciepe Recommendation App
+									</div>
+								</a>
+								<div class="tags">
+									<span class="tag">Ionic</span>
+									<span class="tag">Flask</span>
+									<span class="tag">Python</span>
+									<span class="tag">TypeScript</span>
+								</div>
+							</li>
+							<li data-panel="panel-5">
+								<a href="#">
+									<figure>
+										<img src="projects/imperium-cover.PNG">
+									</figure>
+									<div class="blog-title">
+										Project IMPERIUM - IOT
+									</div>
+								</a>
+								<div class="tags">
+									<span class="tag">Arduino</span>
+									<span class="tag">C++</span>
+									<span class="tag">HTML</span>
+									<span class="tag">Css</span>
+								</div>
+							</li>
+							<li data-panel="panel-6">
+								<a href="#">
+									<figure>
+										<img src="projects/Automation-cover.PNG">
+									</figure>
+									<div class="blog-title">
+										TRAX Projects
+									</div>
+								</a>
+								<div class="tags">
+									<span class="tag">SpringBoot</span>
+									<span class="tag">Hibernate</span>
+									<span class="tag">Java</span>
+									<span class="tag">HTML</span>
+								</div>
+							</li>
+						</ul>
+
+						<!-- <p>Illustrations by 
+							<a class="owner-text" href="http://@malinda0610.medium.com">Naveen Fernando</a>
+						</p> -->
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<div class="title">
+							<span class="title_1">MY</span>
+							<span class="title_2">BLOGS</span>
+						</div>
+					</div>
+					<div class="bl-content">
+
+						<div class="container" style="text-align: center;">
+							<div class="page-title">
+								<span class="word-1">MY</span>
+								<span class="word-2">BLOGS</span>
+							</div>
+						</div><br><br>
+
+
+						<ul class="blog-items" id="bl-work-items_1">
+							<li data-panel="panel-11">
+								<a href="#">
+
+									<div class="blog-post">
+										<div class="blog-img">
+											<img src="images/blog-post-1.jpg">
+										</div>
+										<div class="blog-date">
+											31 May
+										</div>
+										<div class="blog-title">
+											How to configure CKEditor 5 Rich text editor with Angular
+										</div>
+									</div>
+
+								</a>
+							</li>
+							<li data-panel="panel-12">
+								<a href="#">
+
+									<div class="blog-post">
+										<div class="blog-img">
+											<img src="images/blog-post-2.jpg">
+										</div>
+										<div class="blog-date">
+											25 May
+										</div>
+										<div class="blog-title">
+											Stream Messages Using Apache Kafka — 2.5.0.
+										</div>
+									</div>
+
+								</a>
+							</li>
+							<li data-panel="panel-13">
+								<a href="#">
+
+									<div class="blog-post">
+										<div class="blog-img">
+											<img src="images/blog-post-3.jpg">
+										</div>
+										<div class="blog-date">
+											25 May
+										</div>
+										<div class="blog-title">
+											Apache-Kafka — Stream Custom Serialized Objects.
+										</div>
+									</div>
+
+								</a>
+							</li>
+							<li data-panel="panel-14">
+								<a href="#">
+
+									<div class="blog-post">
+										<div class="blog-img">
+											<img src="images/blog-post-4.jpg">
+										</div>
+										<div class="blog-date">
+											01 Sep
+										</div>
+										<div class="blog-title">
+											Setup Environment For Oracle Database.
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<div class="title">
+							<span class="title_1">MY</span>
+							<span class="title_2">GALLERY</span>
+						</div>
+					</div>
+					<div class="bl-content">
+						<div class="container" style="text-align: center;">
+							<div class="page-title">
+								<span class="word-1">MY</span>
+								<span class="word-2">GALLERY</span>
+							</div>
+						</div><br><br>
+
+
+						<!-- <section class="content__section"> -->
+							<!-- <div class="playlist__one"> -->
+								<h2 class="playlist__title">Video Gallery</h2><br>
+								<div class="videos">
+									<div class="video" style="background-image: url(https://img.youtube.com/vi/o2DJuYx_d5g/mqdefault.jpg)">
+										<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/o2DJuYx_d5g" data-gall="myGallery"><i class="fas fa-play-circle"></i></a>
+									</div>
+									<div class="video" style="background-image: url(https://img.youtube.com/vi/8tVFgAIV-bs/mqdefault.jpg)">
+										<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/8tVFgAIV-bs" data-gall="myGallery"><i class="fas fa-play-circle"></i></a>
+									</div>
+									<div class="video" style="background-image: url(https://img.youtube.com/vi/GW1mRl65vAE/mqdefault.jpg)">
+										<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/GW1mRl65vAE" data-gall="myGallery"><i class="fas fa-play-circle"></i></a>
+									</div>
+									<div class="video" style="background-image: url(https://img.youtube.com/vi/gr4PHLL6I_s/mqdefault.jpg)">
+										<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/gr4PHLL6I_s" data-gall="myGallery"><i class="fas fa-play-circle"></i></a>
+									</div>
+									<div class="video" style="background-image: url(https://img.youtube.com/vi/VXEst0VOMNA/mqdefault.jpg)">
+										<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/VXEst0VOMNA" data-gall="myGallery"><i class="fas fa-play-circle"></i></a>
+									</div>
+									<div class="video" style="background-image: url(https://img.youtube.com/vi/BGdEEpjgVgs/mqdefault.jpg)">
+										<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/BGdEEpjgVgs" data-gall="myGallery"><i class="fas fa-play-circle"></i></a>
+									</div><br>
+								</div>
+							<!-- </div> -->
+						<!-- </section> -->
+
+						<h2 class="playlist__title">Image Gallery</h2><br>
+
+						  <div class="grid gallery">
+							<div class="cell"><a class="lightbox" href="gallery/1.jpg"><img class="grid-img" src="gallery/1.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/2.jpg"><img class="grid-img" src="gallery/2.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/3.jpg"><img class="grid-img" src="gallery/3.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/4.jpg"><img class="grid-img" src="gallery/4.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/5.jpg"><img class="grid-img" src="gallery/5.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/6.jpg"><img class="grid-img" src="gallery/6.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/7.jpg"><img class="grid-img" src="gallery/7.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/8.jpg"><img class="grid-img" src="gallery/8.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/9.jpg"><img class="grid-img" src="gallery/9.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/10.jpg"><img class="grid-img" src="gallery/10.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/11.jpg"><img class="grid-img" src="gallery/11.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/12.jpg"><img class="grid-img" src="gallery/12.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/13.jpg"><img class="grid-img" src="gallery/13.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/14.jpg"><img class="grid-img" src="gallery/14.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/15.jpg"><img class="grid-img" src="gallery/15.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/16.jpg"><img class="grid-img" src="gallery/16.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/17.jpg"><img class="grid-img" src="gallery/17.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/18.jpg"><img class="grid-img" src="gallery/18.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/19.jpg"><img class="grid-img" src="gallery/19.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/20.jpg"><img class="grid-img" src="gallery/20.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/21.jpg"><img class="grid-img" src="gallery/21.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/18.jpg"><img class="grid-img" src="gallery/22.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/19.jpg"><img class="grid-img" src="gallery/23.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/20.jpg"><img class="grid-img" src="gallery/24.jpg"></a></div>
+							<div class="cell"><a class="lightbox" href="gallery/21.jpg"><img class="grid-img" src="gallery/25.jpg"></a></div>
+						  </div>
+
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+						
+						<script type="text/javascript">
+							baguetteBox.run('.gallery', {});
+
+							AOS.init();
+						</script>
+
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- Panel items for the works -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="panel-1">
+						<div>
+
+							<h1>Tourism In Sri Lanka</h1>
+
+							<p>As a Full Stack Developer, I was responsible of building the entire user interfaces and the backend of for the 
+								new website, redefining the User Experience and studying new interactions between the User and the Interface.</p>
+								
+							<p>One of the most exciting experience was the entire front-end system was developed using pure HTML, CSS, and Javascript.
+								This allows developer to have the full controll of the web componenets.</p>
+                        
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-1.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-2.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-3.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-4.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-5.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-6.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-7.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-8.png" />
+							<img class="project-image" src="projects/Tourism-In-Sri-Lanka-9.png" />
+						
+						</div>
+					</div>
+					<div data-panel="panel-2">
+						<div>
+
+							<h1>Online Pizza Delivery Ecommerce Application</h1>
+
+							<p>As a Full Stack Developer, I was responsible of building the entire user interfaces and the backend of for the 
+								new website, redefining the User Experience and studying new interactions between the User and the Interface.</p>
+
+							<p>This is a ecommerce web application, which is implemented using Codeiniter, PHP HTML, CSS, Ajax, and JavaScript.
+								One of the most exciting experience was Codeiniter framework uses MVC architecture. Which enables developers to
+								implement web applications faster and helps during the furthure modifications.</p>
+
+							<img class="project-image shadow" src="projects/codeigniter-pizzanow-1.png" />
+							<img class="project-image" src="projects/codeigniter-pizzanow-2.png" />
+							<img class="project-image" src="projects/codeigniter-pizzanow-3.png" />
+							<img class="project-image" src="projects/codeigniter-pizzanow-4.png" />
+							<img class="project-image" src="projects/codeigniter-pizzanow-5.png" />
+							<img class="project-image" src="projects/codeigniter-pizzanow-6.png" />
+							<!-- <img class="project-image" src="projects/codeigniter-pizzanow-7.png" /> -->
+							
+							<img class="project-image shadow" src="projects/codeigniter-pizzanow-8.png" />
+							
+							<img class="project-image shadow" src="projects/codeigniter-pizzanow-9.png" />
+							
+							<img class="project-image shadow" src="projects/codeigniter-pizzanow-10.png" />
+							
+							<img class="project-image shadow" src="projects/codeigniter-pizzanow-11.png" />
+
+						</div>
+					</div>
+					<div data-panel="panel-3">
+						<div>
+							<h1>Cardiac Hypertrophy Disease Prediction Application</h1>
+
+							<p>This is a research and developement project which I had done for my final year project.
+								The main objective of this research approach is to design, develop and test an application which is capable of
+								predict cardiac hypertrophy and enlargement using electrocardiagram records.</p>
+
+							<p>The first phase of this project is to implement the machine learning model to predict the cardiac hypertrophy and enlargement.
+								The model implementation was done using the latest machine learning techniques and libraries such as Random Forest,
+								Scipy, Biospy, and CNN.
+							</p>
+
+							<p>The second phase was to present the machine learning model in a web application. The front end of the web application was 
+								developed using the latest version of Angular framework and TypeScript. Since this is a research and developement project the backend 
+								implementation was done using the Flask framework and python language.
+							</p>
+
+							<img class="project-image shadow" src="projects/hypertrophy-12.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-13.png" />
+
+
+							<img class="project-image shadow" src="projects/hypertrophy-1.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-2.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-3.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-4.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-5.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-6.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-14.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-7.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-8.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-9.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-10.png" />
+							<img class="project-image shadow" src="projects/hypertrophy-11.png" />
+
+
+						</div>
+					</div>
+					<div data-panel="panel-4">
+						<div>
+
+							<h1>Reciepe Recommendation based on customer reviews</h1>
+
+							<p>As a full stack developer i was responsible for implement the both front-end and the backend of the application</p>
+
+							<p>This a research and developement group project to asses the student software development skills</p>
+
+							<p>The main objective of this project is to design, develop and test an application which is capable of recommend
+								food recipes for customers based on their restuarent reviews.
+							</p>
+
+							<p>User interfaces of the application was implemented using Ionic which is a framework build on top of angular framework.
+							It enables developers to build cross platform application. Since this is a R & D project the backend implementation was 
+							done using the flask framework and python language. </p>
+							
+							<p>Furthuremore to the google api services has used to access customers restuarent reviews and search restuarent.</p>
+							<br>
+							<div class="row">
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-1.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-2.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-3.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-4.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-5.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-6.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-7.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-8.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-9.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-10.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-11.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-12.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/reciepe-app-13.png" /></div>
+							</div>
+						</div>
+					</div>
+					<div data-panel="panel-5">
+						<div>
+
+							<h1>IMPERIUM - An IOT Project</h1>
+
+							<p>This project is to provide information to its users with real time and accurate data of their electrical appliances and 
+								guide them for an affordable electricity bill while maintaining good practises for a energy preservation. 
+							</p>
+
+							<p>Target audiance of this project were General electricity consumers who are getting a bill of more than Rs. 5000/-,
+								Small to Medium Scale Enterprises, and Consumers who are trying to reduce the bill amount with their busy schedules.
+							</p>
+							
+							<div class="row">
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-1.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-2.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-3.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-4.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-5.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-6.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-7.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-8.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-9.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-10.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-11.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-12.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-13.png" /></div>
+								<div class="col-12 col-md-6 col-lg-4"><img class="project-image shadow" src="projects/imperium-14.png" /></div>
+							</div>
+
+						</div>
+					</div>
+					<div data-panel="panel-6">
+						<div>
+							<h1>TRAX & TRAX Exception Automation Projects</h1>
+
+							<h2>TRAX Project</h2>
+
+							<p>
+								TRAX is a software as a service (Saas) architecture implementation of rail freight
+								management solution that tracks, traces and proatively monitors shipments. A supply
+								chain software solution control over business operations for railcar and 
+								iventory-in-monitorand by creating a secure platform for shippers. It allows viewing 
+								access for their buyers, and stockholders letting them see in transit goods across 
+								multiple careers, offers sales-on-track to multiple parties in real-time and provides
+								shippers with real-time visibility to all their railcar shipment across multiple class 
+								1 and shortline railroads.
+							</p>
+
+							<p>
+								As a Full stack software developer i was assigned to design and develop new interfaces 
+								based on customer requirements.
+							</p>
+
+							<p>
+								The fontend of the application developed using smartGWT and backend is developed using
+								SpringBoot, Struts, Hibernate and Java.
+							</p>
+
+							<h2>TRAX Exception Automation Project</h2>
+
+							<p>This is a supporting application for TRAX application. The application was build using 
+							ReactJs, NodeJs, Puppeteer and Axios.</p>
+
+							<p>This application was implemented to prevent the data discrepancy between TRAX application
+							and US railroad web sites.</p>
+
+
+
+						</div>
+					</div>
+					<nav>
+						<span class="bl-next-work">&gt; Next Project</span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div>
+
+
+				<div class="bl-panel-items" id="bl-panel-work-items_1">
+					<div data-panel="panel-11">
+						<div>
+							
+							<div class="container">
+							
+								<h1>How to configure CKEditor 5 Rich text editor with Angular.</h1>
+								
+								<br>
+							
+								<div class="author">
+									<div class="authorImage"></div>
+									<div class="authorInfo">
+										<div class="authorName">
+											<a href="http://malinda0610.medium.com/">Naveen Fernando</a>
+										</div>
+										<span class="authorSub">
+											May 31,2020. 4 min read
+											<span class="star">⋆</span>
+										</span>
+									</div>
+								</div>
+
+								<br>
+								
+								<img src="https://miro.medium.com/max/2000/1*1kHbiVXC9LUumIOZcZzaHg.jpeg" alt="" class="blog-image">
+
+								<p><span class="first-letter">H</span>ello folks, In this article, I am going to discuss how to setup CKeditor rich text editor into your Angular project,</p>
+
+								<p>I am currently using the latest versions of Angular, Node and npm</p>
+
+								<div class="code">
+									Angular CLI = 12.0.2 <br><br>
+									Node = 14.17.0 <br><br>
+									NPM = 7.14.0 <br><br>
+								</div>
+								<b>Table of content</b>
+								<ul class="numbered-list">
+									<li>Download the CKeditor custom builder.</li>
+									<li>Create a new Angular project.</li>
+									<li>Add CKEditor to angular project and build the CKEditor project.</li>
+									<li>CKeditor model Integration with Angular project.</li>
+								</ul>
+
+								<h2>[1] — Download the CKeditor custom builder</h2><br>
+
+								<p><b>Step 1:</b> visit CKeditor online-builder page</p>
+
+								<a href="https://ckeditor.com/ckeditor-5/online-builder/" class="blog-link">CKEditor 5 online builder | Rich text editor of tomorrow</a>
+							
+								<p><b>Step 2:</b> Choose Classic builder option</p>
+							
+								<img src="https://miro.medium.com/max/2000/1*GtuvOkiRhVRKNrlVsfO6_A.png" alt="" class="blog-image">
+							
+								<p><b>Step 3:</b> Choose the following plugins from the given list. These plugins doesn't need any CKeditor cloud support in order to use.</p>
+
+								<img src="https://miro.medium.com/max/2000/1*nLIeP-XQdFjgSSQM9p5tiw.png" alt="" class="image-blog">
+
+								<p><b>Step 4:</b>Click Next button till you come to the following window</p>
+
+								<img src="https://miro.medium.com/max/1400/1*xTIAVhLEhrl_0pXJKZdZ8g.png" alt="" class="blog-image">
+
+								<i>Note: Make sure not to add commercial plugins, which need the CKeditor cloud support, If you add any plugin mistakenly website will prompt the following message.</i>
+
+								<img src="https://miro.medium.com/max/365/1*0xbTAakvjlNrCPUvjWOw-A.png" alt="" class="blog-image">
+
+								<img src="https://miro.medium.com/max/700/1*rT7eGO5DS6FpA_AjrnSq9Q.png" alt="" class="blog-image">
+
+								<p><b>Step 5:</b> Click start and download the custom CKeditor5 build</p>
+
+								<hr class="separator separator--dots" />
+
+								<h2>[2] — Create a new Angular project</h2><br>
+
+								<p><b>Step 1: </b> visit angular web site</p>
+
+								<a href="https://angular.io/cli" class="blog-link">Angular</a>
+
+								<p>Use the following command to install and run the angular project</p>
+
+								<p>Install angular cli globally</p>
+
+								<div class="code">npm install -g @angular/cli</div>
+
+								<p>create project</p>
+
+								<div class="code">
+									ng new my-first-project <br><br>
+									cd my-first-project <br><br>
+									ng serve --open <br><br>
+								</div>
+
+								<hr class="separator separator--dots" />
+
+								<h2>[3] — Add CKEditor to angular project and build the CKEditor project.</h2><br>
+
+								<blockquote>
+									In order to use the plugins of CKEditor5, We have build the project like an angular application.
+								</blockquote>
+
+								<p><b>Step 1:  </b>Extract the downloaded CKEditor zip file</p>
+
+								<img src="https://miro.medium.com/max/305/1*7yzeQPX1QmbstYN5Ga0UyQ.png" alt="" class="blog-image">
+
+								<p><b>Step 2:  </b>Add the extracted CKEditor folder into src folder of the Angular project</p>
+
+								<p><b>Step 3:  </b>Then open a terminal from that folder</p>
+
+								<img src="https://miro.medium.com/max/558/1*BUpihMU-g4zN_waYDJsAxA.png" alt="" class="blog-image">
+
+								<img src="hhttps://miro.medium.com/max/553/1*Z6aUx36OTfitiQPFzWtr4w.png" alt="" class="blog-image">
+
+								<p><b>Step 4:  </b>Install all the node packages</p>
+
+								<div class="code">npm install</div>
+
+								<p>After successfully build you will able to see a new node_module file is available.</p>
+
+								<img src="https://miro.medium.com/max/309/1*tW1nTSwX5_zCS72ZfrfnBA.png" alt="" class="blog-image">
+
+								<p><b>Step 5:  </b>Step 5: Build the CKEditor project</p>
+
+								<div class="code">npm run-script build</div>
+
+								<hr class="separator separator--dots" />
+
+								<h2>[4] — CKeditor model Integration with Angular project.</h2><br>
+
+								<p><b>Step 1:  </b>Goto root directory of the angular project and install the ckeditor5-angular package</p>
+
+								<div class="code">npm install @ckeditor/ckeditor5-angular --save</div>
+
+								<p><b>Step 2:  </b>import the installed module to app.module.ts</p>
+
+								<div class="code">import { CKEditorModule } from ‘@ckeditor/ckeditor5-angular’;</div>
+
+								<p>add the module name to the imports as well</p>
+
+								<div class="code">
+									imports: [
+										CKEditorModule
+									]
+								</div>
+
+								<p><b>Step 3:  </b>Visit app.components.ts app.module.ts import the ckeditor.js</p>
+
+								<p>give the correct path to the ckeditor.js file</p>
+
+								<img src="https://miro.medium.com/max/318/1*8lxMFcLLAtVdpt1yCPwpGg.png" alt="" class="blog-image">
+
+								<div class="code">import * as customBuild from '../app/ckCustomBuild/build/ckeditor';</div>
+
+								<p><b>Step 4:  </b>Create a variable for gold the html data and assigned a simple value</p>
+
+								<div class="code">public htmlData:string = "<p>Hello, world!</p>"</div>
+
+								<p>Next create a variable for the editor</p>
+
+								<div class="code">public Editor = customBuild;</div>
+
+								<img src="https://miro.medium.com/max/456/1*PkOM3rYHn0KMkSXeaNSjmQ.png" alt="" class="blog-image">
+
+								<p>Create a variable for the CKEditor configurations. Here you can add all the selected plugins.</p>
+
+								<script src="https://gist.github.com/nxviyx/5238434d0c8fa7c6f2ebd0b5c98c192e.js"></script>
+
+								<p>Visit app.component.html and define the ckeditor</p>
+
+								<div class="code">
+									<!-- <ckeditor [editor]="Editor" [config]="config" [(ngModel)]="htmlData"></ckeditor> -->
+								</div>
+
+								<p>Final step is to serve the angular project</p>
+
+								<div class="code">ng serve —- open</div>
+
+								<img src="https://miro.medium.com/max/1400/1*Y-XxyDgr2rXi9nJnWJbhyQ.jpeg" alt="" class="blog-image">
+
+								<hr class="separator separator--dots" />
+
+							</div>
+
+						</div>
+					</div>
+					<div data-panel="panel-12">
+						<div>
+
+							<div class="container">
+
+								<h1>Stream Messages Using Apache Kafka — 2.5.0.</h1>
+								
+								<!-- <br> -->
+								
+								<div class="author">
+									<div class="authorImage"></div>
+									<div class="authorInfo">
+										<div class="authorName">
+											<a href="http://malinda0610.medium.com/">Naveen Fernando</a>
+										</div>
+										<span class="authorSub">
+											May 25,2020. 5 min read
+											<span class="star">⋆</span>
+										</span>
+									</div>
+								</div>
+	
+								<br>
+
+								<p><span class="first-letter">H</span>ello folks , In this article, I am going to discuss how to stream Messages Using Apache Kafka</p>
+
+								<blockquote>
+									Note : All the commands used in this article only work on a windows machine.
+								</blockquote>
+
+								<blockquote>
+									This report is written based on the current stable version (2.5.0) of Apache Kafka, which released on April 15, 2020.
+								</blockquote>
+
+								<h2>Steps to Install Apache Kafka and run the Zookeeper and server.</h2>
+
+								<p>i) Visit the Apache Kafka web site.</p>
+
+								<a class="blog-link" href="https://kafka.apache.org/downloads">Apache Kafka
+									2.5.0 is the latest release</a>
+
+								<p>ii) Download the latest recommended version.</p>
+
+								<img blog-image src="https://cdn-images-1.medium.com/max/800/1*RNg7lqlM-HLOUYCG2vojOw.png" alt="">
+
+								<p>iii) Download and install 7-zip.</p>
+
+								<a class="blog-link" href="https://www.7-zip.org/download.html">Download 7- Zip</a><br>
+
+								<img class="blog-imag" src="https://cdn-images-1.medium.com/max/800/1*dlQEJvrLRYMsaFsFi8SGCg.png" alt="">
+
+								<p>v) Extract the kafka_2.12–2.5.0.tgz file using 7-zip.</p>
+
+								<p>v) Move the extracted File to C:\kafka></p>
+
+								<img class="blog-image" src="https://cdn-images-1.medium.com/max/800/1*rda7PPrxrDhwevMjIiMaEg.png" alt="">
+
+								<i>Your File Directory path should be like this</i>
+
+								<p>vi) Create two directories named for server and zookeeper,kafka-logs and zookeeper respectively.</p>
+
+								<p>C:\kafka\kafka_2.12–2.5.0></p>
+
+								<div class="code">mkdir kafka-logs zookeeper</div>
+
+								<img class="blog-image" src="https://miro.medium.com/max/163/1*fbtLtp_Uou_i2PsUr0KUNA.png" alt="">
+
+								<p>vii) Go to C:\kafka\kafka_2.12–2.5.0\config></p>
+
+								<p>Change the log.dir path to “kafka-logs” directory path in server.properties File.</p>
+
+								<div class="code">log.dirs=C:/kafka/kafka_2.12–2.5.0/kafka-log</div>
+
+								<p>Change the dataDir path to “zookeeper” directory path in zookeeper.properties File.</p>
+
+								<div class="code">dataDir=C:/kafka/kafka_2.12–2.5.0/zookeeper</div>
+
+								<p>viii) First let’s start the zookeeper by executing the below command.</p>
+
+								<div class="code">.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties</div>
+
+
+								<img src="https://miro.medium.com/max/630/1*Sw01CReBLUyfT3bUDujnvQ.png" alt="" class="blog-image">
+
+								<p>ix) Secondly, we have to start the server to serve data. Use the below command to run the server.</p>
+
+								<div class="code">.\bin\windows\kafka-server-start.bat .\config\server.properties</div>
+
+								<img src="https://cdn-images-1.medium.com/max/800/1*JYqReJ8xfiJi3ZMLBIWQtg.png" alt="" class="blog-image">
+
+								<hr class="separator separator--dots" />
+
+								<h2>Send records from producer to consumer through a Kafka topic using the console CLI.</h2><br>
+
+								<img src="https://miro.medium.com/max/380/1*OWO0hkg8FOHnDjt6WqAuzA.jpeg" alt="" class="blog-image">
+
+								<p>i) Now let’s create a Kafka Topic to publish some records.</p>
+
+								<p>Command for creating a topic,</p>
+
+								<div class="code">.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Topic-A</div>
+
+								<img src="https://miro.medium.com/max/630/1*HGifCA5jdvhtJt9iv_lhnA.png" alt="" class="blog-image">
+
+								<p>ii) Execute the describe command to ensure that the topic created.</p>
+
+
+								<div class="code">.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --describe --topic Topic-A</div>
+
+								<img src="https://miro.medium.com/max/630/1*Gq6Otoq0O6N2FqwMRcep5A.png" alt="" class="blog-image">
+
+								<img src="https://miro.medium.com/max/630/1*iOSSY7AV2HH6fywyY-s83Q.jpeg" alt="" class="blog-image">
+
+								<p>iii) Let’s execute this command to create a console producer and then publish some records to the topic we have created.</p>
+
+								<div class="code">.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic Topic-A</div>
+
+								<img src="https://miro.medium.com/max/630/1*GbowShl_P_2PnFxO8mVbQQ.png" alt="" class="image-blog">
+
+								<p>iv) Finally, create a console consumer and consume the publish messages from the producer.</p>
+
+								<div class="code">.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic Topic-A --from-beginning</div>
+
+								<p>Here you can see the published messages from the producer.</p>
+
+								<img src="https://miro.medium.com/max/630/1*-xh58kUVMk0uhNl7jArn8A.png" alt="" class="image-blog">
+
+								<hr class="separator separator--dots" />
+
+								<h2>How to delete a topic</h2>
+
+								<p>i) First, make sure to add this line to the server.properties File</p>
+
+								<div class="code">delete.topic.enable=true</div>
+
+								<p>Otherwise, it will be prompted below message after you execute the delete command,</p>
+
+								<img src="https://miro.medium.com/max/535/1*fN4swctcpBjQp8PYQTCLhQ.png" alt="" class="blog-image">
+
+								<p>ii) Restart the zookeeper and server and run the delete command.</p>
+								
+								<div class="code">.\bin\windows\kafka-topics.bat --delete  --zookeeper localhost:2181 --topic Topic-A</div>
+
+								<img src="https://miro.medium.com/max/630/1*WzNT5-1kmU9tGmx7jdoU_w.png" alt="" class="blog-image">
+
+								<p>iii) Use describe command to confirm the delete process has succeeded.</p>
+
+								<div class="code">.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --describe --topic Topic-A</div>
+
+								<i>Before deleting the Topic-A</i><br>
+
+								<img src="https://miro.medium.com/max/630/1*Gq6Otoq0O6N2FqwMRcep5A.png" alt="" class="blog-image">
+
+								<i>After deleted the Topic-A</i><br>
+
+								<img src="https://miro.medium.com/max/630/1*G9esAln-gipXNboUzspUzA.png" alt="" class="blog-image">
+
+								<hr class="separator separator--dots" />
+							</div>
+
+						</div>
+					</div>
+					<div data-panel="panel-13">
+						<div>
+							
+							<div class="container">
+							
+								<h1>Apache-Kafka — Stream Custom Serialized Objects In 6 Steps.</h1>
+							
+								<br>
+							
+								<div class="author">
+									<div class="authorImage"></div>
+									<div class="authorInfo">
+										<div class="authorName">
+											<a href="http://malinda0610.medium.com/">Naveen Fernando</a>
+										</div>
+										<span class="authorSub">
+											May 28, 2020 · 5 min read
+											<span class="star">⋆</span>
+										</span>
+									</div>
+								</div>
+
+								<br>
+								
+								<p><span class="first-letter">H</span>ello folks, In this article, I am going to discuss how to stream custom objects using docker.</p>
+								
+							
+								<ul class="numbered-list">
+									<li>Set up the environment for Kafka (Kafka server, Zookeeper) and Docker.</li>
+									<li>Set up the programming environment.</li>
+									<li>Create a Serializer class for serialize the custom object.</li>
+									<li>Create a Deserializer class for Deserialize the custom object.</li>
+									<li>Create the producer and send the Avro serial object to the topic.</li>
+									<li>Create customer and consume data published by the producer.</li>
+								</ul>
+								
+								<br>
+							
+								<img class="blog-image" src="https://miro.medium.com/max/1125/1*oW1MRxe5dN09oiK-PNpBDg.jpeg" alt="">
+								
+								<h2>1. Set up the environment for Kafka (Kafka server, Zookeeper) and Docker.</h2>
+							
+								<p>First, we have to install docker in your local machine.You can download it from docker’s official page, which I mentioned below.</p>
+							
+								<a class="blog-link" href="https://docs.docker.com/desktop/">docs.docker.com</a><br>
+							
+								<img class="blog-image" src="https://miro.medium.com/max/788/1*D0lfr7Or2kjfH0zB5IGazQ.png" alt="">
+							
+								<p>Here are the direct links you can download Docker for Mac and Windows OS.</p>
+							
+								<a class="blog-link" href="https://hub.docker.com/editions/community/docker-ce-desktop-mac/">Docker Desktop for Mac — Docker Hub</a><br>
+							
+								<a class="blog-link" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">Docker Desktop for Windows — Docker Hub</a>
+							
+								<p>To make sure you have a supported version of Docker. Run docker --version. Note that docker-compose is included as part of those desktop installs.</p>
+							
+								<div class="code">docker --version</div>
+							
+								<img class="blog-image" src="https://miro.medium.com/max/428/1*2WgJ_E81BX7PCAuHevVKSA.png" alt="">
+							
+								<p>First, we need to create a docker-compose file. Then we have to include Kafka and Zookeeper images to it. Docker images used in this project are presented by confluentinc.</p>
+								
+								<div>
+									<script src="https://gist.github.com/nxviyx/cb76065a29d0a8146d6d3031275d398a.js"></script>					  
+								</div>
+							
+								<blockquote>
+									Open the command prompt where your docker-compose.yml file located and run the following command, which will create a zookeeper instance and a Kafka server.
+								</blockquote>
+							
+								<i>Note that the file name should be “docker-compose” and the file extension must be “yml”, otherwise, the command will not work.</i>
+							
+								<br><br>
+							
+								<div class="code">docker-compose -f docker-compose.yml up -d</div>
+							
+								<img src="https://miro.medium.com/max/788/1*f7XjQtNPYXQDtNdqJbPEag.png" alt="" class="blog-image">
+							
+								<blockquote>
+									Create a topic
+								</blockquote>
+							
+								<p>After making sure that Kafka and Zookeeper are in good condition, we can create a topic to publish data. I named the topic “Topic-a” and set the number of partitions and the replication factor to 1.</p>
+							
+								<br>
+							
+								<p>If you follow the docker-compose file, the script will create a single node cluster. Since we are doing this project using a single node cluster, the replication factor for each partition of a topic must be one.</p>
+							
+								<div class="code">docker run --net=host --rm confluentinc/cp-kafka:5.3.1 kafka-topics --create --topic Topic-A --partitions 1 --replication-factor 1 --if-not-exists --zookeeper localhost:2181</div>
+							
+								<img class="blog-image" src="https://miro.medium.com/max/267/1*nHJoPg6NssKxlb90mZLn3g.png" alt="">
+							
+								<blockquote>
+									List the topic
+								</blockquote>
+							
+								<p>This command will list all the existing topics in the cluster.</p>
+							
+								<div class="code">docker run --net=host --rm confluentinc/cp-kafka:5.3.1 kafka-topics --list --zookeeper  localhost:2181</div>
+							
+								<img src="https://miro.medium.com/max/309/1*_GyCFKlLpYtngShwB9hKhQ.png" alt="" class="blog-image">
+							
+								<blockquote>
+									Describe the topic
+								</blockquote>
+							
+								<p>Using the describe command, we get an idea of ​​which the broker is holding the leader and followers. In our case, we only have one leader who doesn’t have followers.</p>
+							
+								<div class="code">docker run --net=host --rm confluentinc/cp-kafka:5.3.1 kafka-topics --zookeeper localhost:2181  --describe --topic Topic-A</div>
+							
+								<img src="https://miro.medium.com/max/720/1*NgvyhnLvbbqLn-Ot9Lf9tA.png" alt="" class="blog-image">
+							
+								<blockquote>
+									Stop Zookeeper and Kafka server
+								</blockquote>
+							
+								<p>If for any reason you want to stop the zookeeper and Kafka server, use the docker-compose down command, which ends all Docker containers from running.</p>
+							
+								<i>Note that this command also deletes topics.</i>
+							
+								<br><br>
+							
+								<div class="code">docker-compose down</div>
+							
+								<img src="https://miro.medium.com/max/720/1*CKMmrUA4gB4GqeDGPTR6Sg.png" alt="" class="blog-image">
+							
+								<p>If you have followed my approach so far. By now you have a zookeeper and a Kafka server running on top of docker. Also, we created a topic to stream data.</p>
+							
+								<hr class="separator separator--dots" />
+							
+								<h2>2. Set up the programming environment.</h2>
+							
+								<p>You can use any developing tool that supports Java for this project. I use IntelliJ idea. First, create a Maven project and define all the necessary project dependencies in the “pom.xml” file.</p>
+							
+								<i>org.apache.kafka</i><br><br>
+							
+								<script src="https://gist.github.com/nxviyx/886a9c0c0e3edfe0eae349e8181d4b61.js"></script>
+							
+								<p>Then we need to create a Employee class. Here I have add three instance variables — id, name, join date.The class has one explicitly defined constructor which takes the parameters.</p>
+							
+								<script src="https://gist.github.com/nxviyx/f89f57e212f2315c401f4219181e1e34.js"></script>
+							
+								<h2>3. Create a Serializer class for serialize the custom object.</h2>
+							
+								<p>Since the kafka broker accepts byte data , we need a serializer class to serialize employee object to bytecode</p>
+							
+								<script src="https://gist.github.com/nxviyx/7282b8add1b6295625330709fc968965.js"></script>
+							
+								<h2>4. Create a Deserializer class for Deserialize the custom object.</h2>
+							
+								<p>When the consumer read these objects, it should deserialize in to the employee object.</p>
+								
+								<script src="https://gist.github.com/nxviyx/f5a382f496728bfeb4bff5411b53d238.js"></script>
+							
+								<h2>5. Create the producer and send the Avro serial object to the topic.</h2>
+								
+								<p>Now lets create a producer class to publish the employee object to kafka topic. As you can see here i created five employee objects .The default “value.serializer” is StringSerializer, here we have to change it to custom serializer — “EmployeeSerializer” .</p>
+								
+								<script src="https://gist.github.com/nxviyx/0a7a5f7d99f5345c72be62edf0116c76.js"></script>
+							
+								<h2>6. Create customer and consume data published by the producer.</h2>
+								
+								<p>Once the producer producers the message to a kafka topic . We need a consumer to consume published messages.</p>
+								
+								<script src="https://gist.github.com/nxviyx/01cdfa1056b07928a068472afbb34ee6.js"></script>
+							
+								<p>And now you can run the producer to produce messages to kafka topic.</p>
+							
+								<img src="https://miro.medium.com/max/720/1*cykJEhbxFSX308tCfAk7eg.png" alt="" class="blog-image">
+							
+								<p>Lets run the consumer to consumed the published messages.</p>
+							
+								<img src="https://miro.medium.com/max/720/1*s99bz1DLOvOy6neNP5Xwww.png" alt="" class="blog-image">
+							
+								<p><span class="highlighted">Congratulations, you have successfully implemented a Kafka producer and a consumer, which can write and read custom objects respectively.</span></p>
+								
+								<p>This method is only for use on systems that do not change the properties of the message object.</p>
+							
+								<p>If you have a system that often changes its properties, we need to build a system that works for both old and new objects simultaneously.</p>
+							
+								<p>In such cases, we can use the Apache Avro to serialize and deserialize objects, and schema registry to store and retrieve schemas.</p>
+							
+								<p>The source code of this project will be available in this repository.</p>
+							
+								<p> In case if you miss anything, Here is the <a class="blog-link" href="https://github.com/nxviyx/kafka-stream-custom-objects">Github</a> repository for this project<br></p>
+								<hr class="separator separator--dots" />
+							
+							</div>
+
+						</div>
+					</div>
+					<div data-panel="panel-14">
+						<div>
+
+							<div class="container">
+
+								<h1>Setup Environment For Oracle Database.</h1>
+								
+								<br>
+								
+								<div class="author">
+									<div class="authorImage"></div>
+									<div class="authorInfo">
+										<div class="authorName">
+											<a href="http://malinda0610.medium.com/">Naveen Fernando</a>
+										</div>
+										<span class="authorSub">
+											May 28, 2020 · 2 min read
+											<span class="star">⋆</span>
+										</span>
+									</div>
+								</div>
+	
+								<br>
+
+								<p><span class="first-letter">H</span>ello my gorgeous friends in internet , In this article, I am going to discuss how to Setup Environment For Oracle Database.</p>
+
+	
+								<img class="blog-image" src="https://cdn-images-1.medium.com/max/2560/1*JyabOegj6mnYaqB05nFz2g.png" alt="">
+	
+								<p>i) Visit the Oracle Database Express Edition (XE) site.</p>
+	
+								<a class="blog-link" href="https://www.oracle.com/database/technologies/xe-downloads.html">Oracle Database Express Edition (XE) Downloads</a>
+	
+								<p>ii) Download the package which is given for windows.</p>
+	
+								<img class="blog-image" src="https://cdn-images-1.medium.com/max/800/1*rBaXIx_7fiq0CeA8tzCxxg.png" alt="">
+	
+								<p>iii) unzip the downloaded package and run the setup.exe</p>
+	
+								<p>iv) Always make sure to use</p>
+	
+								<div class="code">
+									Username : SYSTEM <br>
+									Password : oracle
+								</div>
+	
+								<p>v) Visit the Oracle SQL Developer site and download the developer package</p>
+	
+								<a class="blog-link" href="https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html">SQL Developer</a>
+	
+								<p>vi) Download the package which is for windows.</p>
+	
+								<img class="blog-image" src="https://cdn-images-1.medium.com/max/800/1*jt_0UvRd4mEfIkYjTlPS4w.png" alt="">
+	
+								<p>vii) Unzip the package and open the sqldeveloper.exe</p>
+	
+								<p>viii) Add these credentials</p>
+	
+								<div class="code">
+									Connection Name : test db (any name you preffered) <br>
+									Username : SYSTEM <br>
+									Password : oracle <br>
+								</div>
+	
+								<i>Note : Click test button and check the status . if the status is Success you are good to connect and continue work</i>
+	
+								<img class="blog-image" src="https://cdn-images-1.medium.com/max/800/1*VRUPCRhbqMxjPP9zwTfcQw.png" alt="">
+	
+								<p>ix) Execute the below queries and check the results in database.</p>
+	
+								<div class="code">
+									CREATE TABLE Persons (PersonID int,LastName varchar(255), FirstName varchar(255),Address varchar(255),City varchar(255));<br>
+									insert into persons VALUES (1,’Naveen’,’Fernando’,’Boralesgamuwa’,’Colombo’);<br>
+									SELECT * FROM Persons;
+								</div>
+	
+								<img class="blog-image" src="https://miro.medium.com/max/569/1*WWzyfCLrdN5ch16bOJgaTQ.png" alt="">
+	
+								<hr class="separator separator--dots" />
+							</div>
+
+						</div>
+					</div>
+					<nav>
+						<span class="bl-next-work">&gt; Next ARTICLE</span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div>
+
+
+				
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+						<script type="text/javascript" src="js/venobox.min.js"></script>
+						<script>
+							 $(document).ready(function(){
+								$('.venobox').venobox({
+									closeColor: '#f4f4f4',
+									spinColor: '#f4f4f4',
+									arrowsColor: '#f4f4f4',
+									closeBackground: '#17191D',
+									overlayColor: 'rgba(23,25,29,0.8)'
+								}); 
+							});
+						</script>
+
+		<script src="js/jquery.animatedheadline.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+		<script src="js/boxlayout.js"></script>
+		
+		<script>
+			$(function() {
+				Boxlayout.init();
+				Boxlayout_1.init();
+			});
+
+			includeHTML();
+
+		</script>
+
+		
+	</body>
+</html>

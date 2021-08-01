@@ -1,0 +1,115 @@
+.blog-post{
+	position: relative;
+	margin-bottom: 45px;
+	width: auto;
+}
+.blog-img {
+	position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blog-img > img{
+	width: 100%;
+	border-radius: 10px;
+	position: relative;
+	height: auto;
+	margin-bottom: 20px;
+	display: block;
+	transform: scale(1);
+	transition: all 0.4s;
+}
+
+.blog-img:hover > img {
+    transform: scale(1.1);
+}
+
+.blog-date{
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	background: #ffb400;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	font-size: 16px;
+
+	width: min-intrinsic;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    display: table-caption;
+    display: -ms-grid;
+    -ms-grid-columns: min-content;
+}
+
+.blog-title{
+	/* text-transform: uppercase; */
+	font-size: 21px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+.blog-excerpt{
+	line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+.blog-readmore{
+
+}
+.btn-readmore{
+	background: #ffb400;
+	box-shadow: none !important;
+    border-radius: 26px;
+    font-weight: 500;
+    height: 46px;
+    line-height: 46px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 33px;
+    outline: none !important;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-readmore:hover{
+	background: #444;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.tags span{
+    display: inline-block;
+  }
+
+.tag{
+    border: 1px solid #dee2e5;
+    background-color: #dee2e5;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #8199A3;
+    transition: all 300ms ease-in-out;
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tag:hover{
+    color: #fff;
+    background-color: #ffb400;
+  }

@@ -49,7 +49,7 @@ a:hover {
 	text-transform: uppercase;
 }
 .my-name{
-	font-size: 60px;
+	font-size: 55px;
 	font-weight: 700;
 	color: #666;
 	text-transform: uppercase;
@@ -76,7 +76,7 @@ a:hover {
 }
 
 .main-picture.men {
-	background-image: url('https://raw.githubusercontent.com/nxviyx/naveen-fernando/main/gallery/front-image.jpg');
+	background-image: url(/gallery/front-image.jpg);
 	padding: 0;
 	/* margin-top: 24px; */
 	margin-left: 24px;
@@ -102,7 +102,6 @@ a:hover {
   /* padding: 0;
   margin: 0; */
   top: 0;
-  
   
 }
 
@@ -312,7 +311,7 @@ div.bl-panel-items > div {
 }
 
 div.bl-panel-items > div > div {
-/* 	width: 100%; */
+	/* width: 100%; */
 	margin: 0 auto;
 	opacity: 1;
 	bottom: 90px;
@@ -498,6 +497,14 @@ section.bl-expand .bl-icon-close {
 
 
 @media (max-width:1399px) {
+
+	.bl-main > section {
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		/* border: 15px solid #efe9e9; */
+	}
+
 	.page-title h2 {
 	  font-size: 30px;
 	}
@@ -520,11 +527,27 @@ section.bl-expand .bl-icon-close {
 	}
   }
   @media (max-width: 992px) and (min-width:601px){
+
+	.bl-main > section {
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		/* border: 15px solid #efe9e9; */
+	}
+
 	  .profile-picture.section-padding {
 		  padding-right:0 !important;
 	  }
   }
   @media (max-width: 992px) {
+
+	.bl-main > section {
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		/* border: 15px solid #efe9e9; */
+	}
+
 	.bl-main {
 	  width: calc(100% - 24px);
 	  left: 24px !important;
@@ -959,6 +982,79 @@ section.bl-expand .bl-icon-close {
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
   
-  
+  .button__right-left {
+	border: 2px solid #ffb300;
+	background: linear-gradient(to left, #ffb300 50%, #fff 50%);
+	background-size: 200% 100%;
+	background-position: left;
+	transition: all .35s ease-out;
+  }
 
+  .button__right-left:hover {
+	/* border: 2px solid #555555; */
+	background-position: right;
+	color: #fff;
+  }
+
+  .button {
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 1.4;
+	border-radius: 35px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	user-select: none;
+	transition: 250ms all ease-in-out;
+	/* text-transform: uppercase; */
+	text-decoration: none !important;
+	position: relative;
+	z-index: 1;
+	padding: 16px 70px 16px 35px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #555555;
+	background-color: transparent;
+	outline: none !important;
+  }
+
+  .button .button-text {
+	position: relative;
+	z-index: 2;
+	color: #555555;
+	transition: .3s ease-out all;
+  }
+
+  .button:before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform: translateX(100%);
+	transition: .3s ease-out all;
+  }
   
+  .button-icon {
+    background-color: #ffb400;
+}
+
+  .button-icon {
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	bottom: 0;
+	width: 55px;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 19px;
+	color: #ffffff;
+	border-radius: 50%;
+  }

@@ -42,11 +42,15 @@ li{
 	font-family: 'Poppins', sans-serif;
 }
 
+/* .box-stats {
+  border: 1px solid #ddd;
+} */
+
 .item-box{
 	border: 1px solid #ddd;
-	padding: 20px 30px 25px 40px;
+	/* padding: 10px 10px 10px 10px; */
     border-radius: 5px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	color: #666;
 	font-family: 'Poppins', sans-serif;
 	display: inline-block;
@@ -84,6 +88,41 @@ li{
     background: #777;
 }
 
+@media (max-width: 800px) {
+    .item-value{
+        padding-left: 10px;
+    }
+
+    .item-value::before{
+        
+      content: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .item-value{
+        padding-left: 10px;
+    }
+
+    .item-value::before{
+      content: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .item-value{
+        padding-left: 10px;
+    }
+
+    .item-value::before{
+      content: none;
+    }
+
+}
 
 /* ---------------------Education---------------- */
 
